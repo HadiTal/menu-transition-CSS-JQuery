@@ -1,0 +1,77 @@
+    body {
+        direction: rtl;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        font-family: font-yekhan-normal;
+        src: url("../CSS/fonts/IRANYekanLight.eot"), url("../CSS/fonts/IRANYekanLight.otf"), url("../CSS/fonts/IRANYekanLight.svg"), url("../CSS/fonts/IRANYekanLight.ttf"), url("../CSS/fonts/IRANYekanLight.ttf"), url("../CSS/fonts/IRANYekanLight.woff");
+    }
+    
+    @font-face {
+        font-family: font-dana;
+        src: url("../CSS/fonts/fonts/dana-demibold.eot"), url("../CSS/fonts/fonts/dana-demibold.otf"), url("../CSS/fonts/fonts/dana-demibold.svg"), url("../CSS/fonts/fonts/dana-demibold.ttf"), url("../CSS/fonts/fonts/dana-demibold.woff");
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    
+    ul li>ul {
+        display: block;
+        margin-top: 0;
+    }
+    
+    ul li {
+        width: 150px;
+        height: 60px;
+        line-height: 60px;
+        font-family: font-yekhan-normal;
+        background-color: #DF4F34;
+        text-align: center;
+        cursor: pointer;
+        color: #ffff;
+    }
+    
+    a {
+        display: block;
+        text-decoration: none;
+        color: #ffff;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    ul li ul {
+        transition: all 0.3s;
+        display: none;
+    }
+    
+    ul li ul li>ul {
+        margin-right: 150px;
+        margin-top: -50px;
+    }
+    
+    ul li ul li ul {
+        transform: all 0.5s;
+    }
+    
+    ul li ul li {
+        background-color: #D8816E;
+    }
+    
+    ul li ul li:hover {
+        background-color: #DF4F34;
+    }
